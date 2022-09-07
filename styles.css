@@ -177,3 +177,83 @@ header ul li a.active {
     background-color: var(--dark);
     opacity: 1;
 }
+
+.social {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+.social li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.social li a {
+    font-size: 1.8em;
+    color: var(--primary-color);
+}
+
+.social li a:hover {
+    color: #30303033;
+}
+
+@media only screen and (max-width: 991px) {
+    header {
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    .container {
+        padding: 30px;
+        background: var(--lite);
+    }
+
+    .app {
+        display: none;
+    }
+
+    .container-box {
+        flex-direction: column-reverse;
+        margin: 100px 0;
+    }
+
+    .container-box img {
+
+    }
+
+    .dots {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: initial;
+        transform: none;
+        right: initial;
+        margin-top: 20px;
+    }
+
+    .dots .dot {
+        width: 25px;
+        height: 10px;
+        background-color: var(--primary-color);
+        opacity: 0.2;
+    }
+
+    .dots .dot.active {
+        opacity: 1;
+    }
+
+    .container-box .text {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .container-box .text h2 {
+        font-size: 3em;
+    }
+
+
+    .image-box img {
+        margin: 0 100px;
+    }
+}
