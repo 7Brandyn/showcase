@@ -62,3 +62,118 @@ header ul li a:hover,
 header ul li a.active {
     color: var(--primary-color);
 }
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lite);
+    color: var(--primary-color);
+    position: absolute;
+    right: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    box-shadow: 0 5px 15px #30303033;
+}
+
+.app:hover {
+    color: var(--lite);
+    background-color: var(--primary-color);
+    transition: 0.4s;
+    border: 1px solid var(--lite);
+    box-shadow: 5px 5px var(--lite);
+}
+
+.app ion-icon {
+    margin-right: 8px;
+    font-size: 1.4em;
+}
+
+.container-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-box .text {
+    max-width: 800px;
+}
+
+.container-box .text h2 {
+    font-size: 6em;
+    color: var(--primary-color);
+}
+
+.container-box .text p {
+    font-size: 1.1em;
+    color: var(--dark);
+    line-height: 1.8em;
+}
+
+.container-box .text h4 {
+    margin:20px 0;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.btn {
+    display: inline-flex;
+    background: var(--primary-color);
+    color: var(--lite);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    margin: 5px 20px 5px 0;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.btn:hover {
+    background: var(--lite);
+    color: var(--primary-color);
+    box-shadow: 5px 5px;
+    transition: 0.4s;
+}
+
+.btn ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.image-box img {
+    margin: 0 100px 0 50px;
+    max-width: 300px;
+    display: none;
+}
+
+.image-box img.active {
+    display: block;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    right: 80px;
+    transform: translate(-50%);
+}
+
+.dots .dot {
+    display: inline-flex;
+    position: relative;
+    width: 10px;
+    height: 30px;
+    background-color: var(--dark);
+    opacity: 0.2;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dots .dot.active {
+    background-color: var(--dark);
+    opacity: 1;
+}
